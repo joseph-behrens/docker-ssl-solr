@@ -1,0 +1,19 @@
+version: '2.1'
+services:
+  solr:
+    build: .
+    image: solr662
+    container_name: solr662
+    ports:
+      - "8983:8983"
+    networks: 
+      my_network:
+        ipv4_address: 172.16.238.10
+networks:
+  my_network:
+    ipam:
+      driver: default
+      config:
+        -
+          subnet: 172.16.238.0/24
+          gateway: 172.16.238.1
