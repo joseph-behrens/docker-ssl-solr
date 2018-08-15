@@ -1,6 +1,6 @@
-version: '3'
+version: '2'
 services:
   solr:
-    image: joebtest.azurecr.io/joseph-behrens/docker-ssl-solr
+    image: joebtest.azure.io/joseph-behrens/docker-ssl-solr
     ports:
       - "8983:8983"
