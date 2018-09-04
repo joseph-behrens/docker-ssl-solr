@@ -1,4 +1,4 @@
-# Run docker on a Windows container with SSL
+# Run Solr on a Windows container with SSL
 
 ## Description
 
